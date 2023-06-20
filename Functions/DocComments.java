@@ -1,37 +1,40 @@
 public class DocComments {
     public static void main(String[] args) {
+      greet();
+      printText("Dharusha", "19");
+ calculateArea(2.5, 7.2);
+ 
+    }
+/*
+ * Function name : greet
+ * 
+ * Inside function : prints hello 
+ */
+    public static void greet() {
+System.out.println("Hello");
         
     }
+/**
+ * Function name : printText
+ * @param name
+ * @param age
+ */
 
-    /**
-     * Function name: greet
-     * 
-     * Inside function - prints hi
-     */
-    private static void greet() {
-        System.out.println("Hello");
+    public static void printText(String name, String age ) {
+        System.out.println("Hello, I am "  + name + " and " + "I am " + age + " years old");
+
     }
 
-    /**
-     * Prints out the parsed name and age.
-     * 
-     * @param name The user's name
-     * @param age The user's age
-     */
-    public static void printText(String name, String age) {
-        System.out.println("Hi, I am " + name + " and I am " + age + " years old");
-    }
-
-    /**
-     * Calculates the area of the length and width provided
-     * 
-     * @param length the length that you provide
-     * @param width the width that you provide
-     * @return the calculated area
-     */
+/**
+ * Function name : calculateArea
+ * @param length
+ * @param width
+ * @return
+ */
     public static double calculateArea(double length, double width) {
-        double area = length * width;
-        return area;
+//void methods dont return a value thoerefore we change void to double 
+        double area = length * width ; 
+        return area; 
         
     }
 }
