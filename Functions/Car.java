@@ -1,15 +1,14 @@
-public class Car { // creating a car object
-    java.lang.String make;
+public class Car {//creating a car object
+    
+     String make;
     double price;
     int year;
-    java.lang.String colour;
-        
+    String colour;
     
-}
 
-public class Main{ // this uses the object created in Car
+public class Main{ //this uses the object created in Car
     public static void main(String[] args) {
-       //a car is identified by its make, price, year and colour
+        //a car is identified by its make, price, year and colour
         //each car must drive to the nearest exit
 
         Car nissan = new Car();
@@ -26,9 +25,8 @@ public class Main{ // this uses the object created in Car
 
          System.out.println("This " + nissan.make + " is worth R" + nissan.price + 
         ". It was built in " + nissan.year + ". It is " + nissan.colour + ".\n");
-        System.out.println("This " + toyota.make + " is worth R " + toyota.price + " built in " +toyota.year+ " the colour is " + toyota.colour +".");
-}
- 
-        
+        System.out.println("This " + toyota.make + " is worth R " + toyota.price + " built in " +toyota.year+ " the colour is " + toyota.colour + "." );
     }
+}
+}
 
