@@ -1,39 +1,29 @@
- import java.util.Arrays;
-public class TDArrays {// to store table of data
-   
+import java.util.Arrays;
+
+public class TDArrays {
     public static void main(String[] args) {
-        int [][] grades = new int [3][4]; //1st bracket is num of rows. 2nd bracket is num of elements in each row
+        int[][] grades = new int[3][4]; // Declare a 2D array with 3 rows and 4 columns
         
-       // Harry is the 1st student (row 1 = index 0)
+        // Assign grades to each student and each subject using array indexing
         grades[0][0] = 72;
         grades[0][1] = 74;
         grades[0][2] = 78;
         grades[0][3] = 76;
 
-        //Hermoione is the 2nd student (row 2)
         grades[1][0] = 95;
         grades[1][1] = 98;
         grades[1][2] = 99;
         grades[1][3] = 100;
 
-        //Ron is the 3rd student (row 3)
         grades[2][0] = 65;
         grades[2][1] = 64;
         grades[2][2] = 61;
         grades[2][3] = 67;
 
+        // Print the grades for each student using array indexing
         System.out.println("\tHarry: " + grades[0][0] + " " + grades[0][1] + " " + grades[0][2] + " " + grades[0][3]);
-        System.out.println("\tHermoione: " + Arrays.toString(grades[1]));
+        System.out.println("\tHermione: " + Arrays.toString(grades[1]));
         System.out.println("\tRon: " + Arrays.toString(grades[2]));
     }
-}// the faster way
-/*int [][] grades = {
-    {72, 74, 78, 76},
-    {95, 98, 99, 100},
-    {65, 64, 61, 67}
-};
- * System.out.println("\tHarry: " + Arrays.toString(grades[0]));
-        System.out.println("\tHermoione: " + Arrays.toString(grades[1]));
-        System.out.println("\tRon: " + Arrays.toString(grades[2]));
- */
+}
 

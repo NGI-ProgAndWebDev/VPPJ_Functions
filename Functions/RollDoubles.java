@@ -1,31 +1,26 @@
 import java.util.Random;
+
 public class RollDoubles {
-    private static Object dice1;
     public static void main(String[] args) {
-        /**
-         * Function name: rollDice--rolls a dice between 1 and 6
-         * @return randomNumber(int)
-         */
-        //Task 1
-        Random random = new Random();
-        Object i;
-        int randomNumber = (i = 1 , i = 5 + 1);
-
-    }
-//Task 2
-    private static void rollDice(Object dice2) {
-        Object dice;
-        rollDice(dice2);
-        Object dice;
-        rollDice(dice1);
-
-        rollDice(dice1 );
-        rollDice(dice2 );
-        System.out.println("Dice 1:" + dice );
-        System.out.println("Dice 2:" + dice  + "\n");
+        // Task 3: Roll the dice until doubles are rolled
+        int dice1, dice2;
         
+        do {
+            // Task 2: Roll the dice and print their values
+            dice1 = rollDice();
+            dice2 = rollDice();
+            
+            System.out.println("Dice 1: " + dice1);
+            System.out.println("Dice 2: " + dice2 + "\n");
+        } while (dice1 != dice2);
+        
+        // Task 4: Print "You rolled doubles!"
+        System.out.println("You rolled doubles!");
+    }
 
-        //Task 3
-        //Task 4
+    public static int rollDice() {
+        Random random = new Random();
+        return random.nextInt(6) + 1;
     }
 }
+
