@@ -1,0 +1,10 @@
+public class BuiltinFunctions{
+
+    public static void main(String[] args){
+       
+        
+        String example = "Java";
+        int length = example.length();
+        
+    }
+}
